@@ -1,0 +1,21 @@
+@page "{name?}"
+@model asp_lesson_introduction.Pages.HelloModel
+@{
+    ViewData["Title"] = "Greeting";
+}
+
+<h1>Hello, @Model.Name!</h1>
+<p>Server time: @Model.Time.ToString("dd.MM.yyyy HH:mm:ss")</p>
+
+@switch (Model.Number)
+{
+    case < 0:
+        <p>Number @Model.Number is negative</p>
+        break;
+    case 0:
+        <p>Number @Model.Number is 0</p>
+        break;
+    default:
+        <p>Number @Model.Number is positive</p>
+        break;
+}
