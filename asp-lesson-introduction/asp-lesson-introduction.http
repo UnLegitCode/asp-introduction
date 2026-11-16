@@ -1,4 +1,11 @@
-@asp_lesson_introduction_HostAddress = http://localhost:5080
+@urlBase = http://localhost:5080
 
-GET {{asp_lesson_introduction_HostAddress}}/weatherforecast/
+GET {{urlBase}}/users
+Content-Type: application/json
 Accept: application/json
+
+//{
+//  "firstName": "Daria",
+//  "surname": "Pupkina",
+//  "age": 35
+//}
