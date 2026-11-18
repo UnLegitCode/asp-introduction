@@ -1,4 +1,4 @@
-@asp_lesson_introduction_HostAddress = http://localhost:5080
+@urlBase = http://localhost:5080
 
-GET {{asp_lesson_introduction_HostAddress}}/weatherforecast/
+GET {{urlBase}}/
 Accept: application/json
