@@ -1,4 +1,34 @@
 @urlBase = http://localhost:5080
 
-GET {{urlBase}}/
+### list books
+GET {{urlBase}}/books
+Accept: application/json
+
+### get book by id
+GET {{urlBase}}/books/1
+Accept: application/json
+
+### create book
+POST {{urlBase}}/books
+Content-Type: application/json
+Accept: application/json
+
+{
+  "title": "Clean Code",
+  "author": "Robert Martin"
+}
+
+### update existing book
+PUT {{urlBase}}/books
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": 1,
+  "title": "Чистый код",
+  "author": "Роберт Мартин"
+}
+
+### delete book
+DELETE {{urlBase}}/books/1
 Accept: application/json
